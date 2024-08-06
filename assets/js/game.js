@@ -225,20 +225,7 @@ function GanarPuntos() {
 
 function GameOver() {
     gameOver.style.display = "block";
-     Estrellarse();
-    /*if (score > 20){
-        parado = true;
-        // Cambiar el texto del game over
-        gameOver.querySelector(".game-over p").innerText = "¡Felicidades!";
-        // Quitar el boton de reiniciar
-        document.getElementById("restart").style.display = "none";
-        setTimeout(() => {
-            // Redirigir a la página de inicio
-            window.location.href = "felicidades.html";
-        }, 1000);
-    } else {
-        Estrellarse();
-    }*/
+    Estrellarse();
 }
 
 function DetectarColision() {

@@ -219,15 +219,14 @@ function GanarPuntos() {
     } else if (score === 20) {
         gameVel = 3;
         contenedor.classList.add("noche");
-    } else if (score > 20) {
-        GameOver();
     }
     suelo.style.animationDuration = `${3 / gameVel}s`;
 }
 
 function GameOver() {
     gameOver.style.display = "block";
-    if (score > 20){
+     Estrellarse();
+    /*if (score > 20){
         parado = true;
         // Cambiar el texto del game over
         gameOver.querySelector(".game-over p").innerText = "¡Felicidades!";
@@ -239,7 +238,7 @@ function GameOver() {
         }, 1000);
     } else {
         Estrellarse();
-    }
+    }*/
 }
 
 function DetectarColision() {
